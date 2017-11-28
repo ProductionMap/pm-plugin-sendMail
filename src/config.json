@@ -1,0 +1,33 @@
+{
+    "name": "SendMail",
+    "type": "executer",
+    "execProggram": "node",
+    "main": "app.js",
+    "methods": [{
+        "name": "mail",
+        "viewName": "Send mail",
+        "params": [{
+                "name": "SENDER",
+                "viewName": "Replay to",
+                "type": "string"
+            },
+            {
+                "name": "TO",
+                "viewName": "to",
+                "type": "string"
+            },
+            {
+                "name": "SUBJECT",
+                "viewName": "Message subject",
+                "type": "string"
+            },
+            {
+                "name": "BODY",
+                "viewName": "Message body",
+                "type": "text"
+            }
+        ],
+        "actionString": "SENDER TO SUBJECT BODY"
+    }],
+    "imgUrl": "envelope.png"
+}
