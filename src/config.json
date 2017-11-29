@@ -1,7 +1,7 @@
 {
     "name": "SendMail",
-    "type": "executor",
-    "execProggram": "node",
+    "type": "executer",
+    "execProgram": "node",
     "main": "app.js",
     "methods": [{
         "name": "mail",
