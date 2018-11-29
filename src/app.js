@@ -1,24 +1,54 @@
-const sendmail = require('sendmail')();
+const nodemailer = require('nodemailer');
 
-function sendMail(action) {
-    return new Promise(function (resolve, reject) {
-        var execString = action.method.actionString;
-        sendmail({
-            from: 'notifier@productionmap.com',
-            to: action.params.TO,
-            replyTo: action.params.SENDER,
-            subject: action.params.SUBJECT,
-            html: action.params.BODY
-        }, function (err, reply) {
-            if (err) {
-                return reject(err);
+
+function _send(transporter, action){
+    return new Promise((resolve,reject) => {      
+        let mailOptions = {
+            from: action.params.FROM, 
+            to: action.params.TO, 
+            cc: action.params.CC,
+            bcc: action.params.BCC,
+            subject: action.params.SUBJECT, 
+            text: action.params.TEXT, 
+            html: action.params.HTML 
+        };
+    
+        transporter.sendMail(mailOptions, (error, info) => {
+            if (error) {
+                return reject(error);
             }
-            return resolve(reply);
+            resolve(info);
         });
-    });
+    })
 }
 
+function sendMailByService(action){
+        let transporter = nodemailer.createTransport({
+            service:action.params.SERVICE,
+            auth: {
+                user: action.params.USERNAME, 
+                pass: action.params.PASSWORD 
+            }
+        });
+    
+    return _send(transporter, action);    
+    
+}
+function sendMailBySMTP(action){
+        let transporter = nodemailer.createTransport({
+            host:action.params.HOST,
+            port:action.params.PORT,
+            secure: (action.params.PORT == 465) ? true:false,
+            auth: {
+                user: action.params.USERNAME, 
+                pass: action.params.PASSWORD 
+            }
+        });
+
+        return _send(transporter, action);
+}
 
 module.exports = {
-    mail: sendMail
-};
+    sendMailByService:sendMailByService,
+    sendMailBySMTP:sendMailBySMTP
+}

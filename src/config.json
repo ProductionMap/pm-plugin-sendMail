@@ -6,11 +6,235 @@
     "version": "1.2.0",
     "imgUrl": "envelope.png",
     "methods": [{
-        "name": "mail",
-        "viewName": "Send mail",
-        "params": [{
-                "name": "SENDER",
-                "viewName": "Replay to",
+        "name": "sendMailByService",
+        "viewName": "Send mail by service",
+        "params": [
+            {
+                "name": "SERVICE",
+                "viewName": "Services",
+                "type": "options",
+                "options":
+                [
+                    {
+                        "name": "126",
+                        "viewName": "126",
+                        "type": "string"
+                    },
+                    {
+                        "name": "163",
+                        "viewName": "163",
+                        "type": "string"
+                    },
+                    {
+                        "name": "1und1",
+                        "viewName": "1und1",
+                        "type": "string"
+                    },
+                    {
+                        "name": "AOL",
+                        "viewName": "AOL",
+                        "type": "string"
+                    },
+                    {
+                        "name": "DebugMail",
+                        "viewName": "DebugMail",
+                        "type": "string"
+                    },
+                    {
+                        "name": "DynectEmail",
+                        "viewName": "DynectEmail",
+                        "type": "string"
+                    },
+                    {
+                        "name": "FastMail",
+                        "viewName": "FastMail",
+                        "type": "string"
+                    },
+                    {
+                        "name": "GandiMail",
+                        "viewName": "GandiMail",
+                        "type": "string"
+                    },
+                    {
+                        "name": "Gmail",
+                        "viewName": "Gmail",
+                        "type": "string"
+                    },
+                    {
+                        "name": "Godaddy",
+                        "viewName": "Godaddy",
+                        "type": "string"
+                    },
+                    {
+                        "name": "GodaddyAsia",
+                        "viewName": "GodaddyAsia",
+                        "type": "string"
+                    },
+                    {
+                        "name": "GodaddyEurope",
+                        "viewName": "GodaddyEurope",
+                        "type": "string"
+                    },
+                    {
+                        "name": "hot.ee",
+                        "viewName": "hot.ee",
+                        "type": "string"
+                    },
+                    {
+                        "name": "Hotmail",
+                        "viewName": "Hotmail",
+                        "type": "string"
+                    },
+                    {
+                        "name": "iCloud",
+                        "viewName": "iCloud",
+                        "type": "string"
+                    },
+                    {
+                        "name": "mail.ee",
+                        "viewName": "mail.ee",
+                        "type": "string"
+                    },
+                    {
+                        "name": "Mail.ru",
+                        "viewName": "Mail.ru",
+                        "type": "string"
+                    },
+                    {
+                        "name": "Maildev",
+                        "viewName": "Maildev",
+                        "type": "string"
+                    },
+                    {
+                        "name": "Mailgun",
+                        "viewName": "Mailgun",
+                        "type": "string"
+                    },
+                    {
+                        "name": "Mailjet",
+                        "viewName": "Mailjet",
+                        "type": "string"
+                    },
+                    {
+                        "name": "Mailosaur",
+                        "viewName": "Mailosaur",
+                        "type": "string"
+                    },
+                    {
+                        "name": "Mandrill",
+                        "viewName": "Mandrill",
+                        "type": "string"
+                    },
+                    {
+                        "name": "Naver",
+                        "viewName": "Naver",
+                        "type": "string"
+                    },
+                    {
+                        "name": "OpenMailBox",
+                        "viewName": "OpenMailBox",
+                        "type": "string"
+                    },
+                    {
+                        "name": "Outlook365",
+                        "viewName": "Outlook365",
+                        "type": "string"
+                    },
+                    {
+                        "name": "Postmark",
+                        "viewName": "Postmark",
+                        "type": "string"
+                    },
+                    {
+                        "name": "QQ",
+                        "viewName": "QQ",
+                        "type": "string"
+                    },
+                    {
+                        "name": "QQex",
+                        "viewName": "QQex",
+                        "type": "string"
+                    },
+                    {
+                        "name": "SendCloud",
+                        "viewName": "SendCloud",
+                        "type": "string"
+                    },
+                    {
+                        "name": "SendGrid",
+                        "viewName": "SendGrid",
+                        "type": "string"
+                    },
+                    {
+                        "name": "SendinBlue",
+                        "viewName": "SendinBlue",
+                        "type": "string"
+                    },
+                    {
+                        "name": "SendPulse",
+                        "viewName": "SendPulse",
+                        "type": "string"
+                    },
+                    {
+                        "name": "SES",
+                        "viewName": "SES",
+                        "type": "string"
+                    },
+                    {
+                        "name": "SES-US-EAST-1",
+                        "viewName": "SES-US-EAST-1",
+                        "type": "string"
+                    },
+                    {
+                        "name": "SES-US-WEST-2",
+                        "viewName": "SES-US-WEST-2",
+                        "type": "string"
+                    },
+                    {
+                        "name": "SES-EU-WEST-1",
+                        "viewName": "SES-EU-WEST-1",
+                        "type": "string"
+                    },
+                    {
+                        "name": "Sparkpost",
+                        "viewName": "Sparkpost",
+                        "type": "string"
+                    },
+                    {
+                        "name": "Yahoo",
+                        "viewName": "Yahoo",
+                        "type": "string"
+                    },
+                    {
+                        "name": "Yandex",
+                        "viewName": "Yandex",
+                        "type": "string"
+                    },
+                    {
+                        "name": "Zoho",
+                        "viewName": "Zoho",
+                        "type": "string"
+                    },
+                    {
+                        "name": "qiye.aliyun",
+                        "viewName": "qiye.aliyun",
+                        "type": "string"
+                    }
+                ]
+            },
+            {
+                "name": "USERNAME",
+                "viewName": "Username",
+                "type": "string"
+            },
+            {
+                "name": "PASSWORD",
+                "viewName": "Password",
+                "type": "string"
+            },
+            {
+                "name": "FROM",
+                "viewName": "From",
                 "type": "string"
             },
             {
@@ -19,16 +243,90 @@
                 "type": "string"
             },
             {
+                "name": "CC",
+                "viewName": "cc",
+                "type": "string"
+            },
+            {
+                "name": "BCC",
+                "viewName": "bcc",
+                "type": "string"
+            },
+            {
                 "name": "SUBJECT",
                 "viewName": "Message subject",
                 "type": "string"
             },
             {
-                "name": "BODY",
-                "viewName": "Message body",
-                "type": "text"
+                "name": "TEXT",
+                "viewName": "Plaintext message",
+                "type": "string"
+            },
+            {
+                "name": "HTML",
+                "viewName": "Html message",
+                "type": "string"
             }
-        ],
-        "actionString": "SENDER TO SUBJECT BODY"
+        ]},
+        {
+        "name": "sendMailBySMTP",
+        "viewName": "Send mail by SMTP",
+        "params": [
+            {
+                "name": "HOST",
+                "viewName": "Host",
+                "type": "string"
+            },
+            {
+                "name": "PORT",
+                "viewName": "Port",
+                "type": "string"
+            },
+            {
+                "name": "USERNAME",
+                "viewName": "Username",
+                "type": "string"
+            },
+            {
+                "name": "PASSWORD",
+                "viewName": "Password",
+                "type": "string"
+            },
+            {
+                "name": "FROM",
+                "viewName": "From",
+                "type": "string"
+            },
+            {
+                "name": "TO",
+                "viewName": "to",
+                "type": "string"
+            },
+            {
+                "name": "CC",
+                "viewName": "cc",
+                "type": "string"
+            },
+            {
+                "name": "BCC",
+                "viewName": "bcc",
+                "type": "string"
+            },
+            {
+                "name": "SUBJECT",
+                "viewName": "Message subject",
+                "type": "string"
+            },
+            {
+                "name": "TEXT",
+                "viewName": "Plaintext message",
+                "type": "string"
+            },
+            {
+                "name": "HTML",
+                "viewName": "Html message",
+                "type": "string"
+            }
+        ]
     }]
 }
