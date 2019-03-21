@@ -51,7 +51,7 @@
                         "type": "string"
                     },
                     {
-                        "viewName": "GandiMail",
+                        "id": "GandiMail",
                         "name": "GandiMail",
                         "type": "string"
                     },
