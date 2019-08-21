@@ -9,6 +9,7 @@
   "author": "Kaholo Team",
   "license": "ISC",
   "dependencies": {
-    "nodemailer": "4.7.0"
+    "nodemailer": "4.7.0",
+    "nodemailer-sendgrid": "^1.0.3"
   }
 }

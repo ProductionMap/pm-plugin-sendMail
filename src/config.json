@@ -5,6 +5,236 @@
     "main": "app.js",
     "version": "1.2.1",
     "imgUrl": "envelope.png",
+    "settings" : [
+        {
+            "name": "SERVICE",
+            "viewName": "Services",
+            "type": "options",
+            "options":
+            [
+                {
+                    "id": "126",
+                    "name": "126",
+                    "type": "string"
+                },
+                {
+                    "id": "163",
+                    "name": "163",
+                    "type": "string"
+                },
+                {
+                    "id": "1und1",
+                    "name": "1und1",
+                    "type": "string"
+                },
+                {
+                    "id": "AOL",
+                    "name": "AOL",
+                    "type": "string"
+                },
+                {
+                    "id": "DebugMail",
+                    "name": "DebugMail",
+                    "type": "string"
+                },
+                {
+                    "id": "DynectEmail",
+                    "name": "DynectEmail",
+                    "type": "string"
+                },
+                {
+                    "id": "FastMail",
+                    "name": "FastMail",
+                    "type": "string"
+                },
+                {
+                    "id": "GandiMail",
+                    "name": "GandiMail",
+                    "type": "string"
+                },
+                {
+                    "id": "Gmail",
+                    "name": "Gmail",
+                    "type": "string"
+                },
+                {
+                    "id": "Godaddy",
+                    "name": "Godaddy",
+                    "type": "string"
+                },
+                {
+                    "id": "GodaddyAsia",
+                    "name": "GodaddyAsia",
+                    "type": "string"
+                },
+                {
+                    "id": "GodaddyEurope",
+                    "name": "GodaddyEurope",
+                    "type": "string"
+                },
+                {
+                    "id": "hot.ee",
+                    "name": "hot.ee",
+                    "type": "string"
+                },
+                {
+                    "id": "Hotmail",
+                    "name": "Hotmail",
+                    "type": "string"
+                },
+                {
+                    "id": "iCloud",
+                    "name": "iCloud",
+                    "type": "string"
+                },
+                {
+                    "id": "mail.ee",
+                    "name": "mail.ee",
+                    "type": "string"
+                },
+                {
+                    "id": "Mail.ru",
+                    "name": "Mail.ru",
+                    "type": "string"
+                },
+                {
+                    "id": "Maildev",
+                    "name": "Maildev",
+                    "type": "string"
+                },
+                {
+                    "id": "Mailgun",
+                    "name": "Mailgun",
+                    "type": "string"
+                },
+                {
+                    "id": "Mailjet",
+                    "name": "Mailjet",
+                    "type": "string"
+                },
+                {
+                    "id": "Mailosaur",
+                    "name": "Mailosaur",
+                    "type": "string"
+                },
+                {
+                    "id": "Mandrill",
+                    "name": "Mandrill",
+                    "type": "string"
+                },
+                {
+                    "id": "Naver",
+                    "name": "Naver",
+                    "type": "string"
+                },
+                {
+                    "id": "OpenMailBox",
+                    "name": "OpenMailBox",
+                    "type": "string"
+                },
+                {
+                    "id": "Outlook365",
+                    "name": "Outlook365",
+                    "type": "string"
+                },
+                {
+                    "id": "Postmark",
+                    "name": "Postmark",
+                    "type": "string"
+                },
+                {
+                    "id": "QQ",
+                    "name": "QQ",
+                    "type": "string"
+                },
+                {
+                    "id": "QQex",
+                    "name": "QQex",
+                    "type": "string"
+                },
+                {
+                    "id": "SendCloud",
+                    "name": "SendCloud",
+                    "type": "string"
+                },
+                {
+                    "id": "SendGrid",
+                    "name": "SendGrid",
+                    "type": "string"
+                },
+                {
+                    "id": "SendinBlue",
+                    "name": "SendinBlue",
+                    "type": "string"
+                },
+                {
+                    "id": "SendPulse",
+                    "name": "SendPulse",
+                    "type": "string"
+                },
+                {
+                    "id": "SES",
+                    "name": "SES",
+                    "type": "string"
+                },
+                {
+                    "id": "SES-US-EAST-1",
+                    "name": "SES-US-EAST-1",
+                    "type": "string"
+                },
+                {
+                    "id": "SES-US-WEST-2",
+                    "name": "SES-US-WEST-2",
+                    "type": "string"
+                },
+                {
+                    "id": "SES-EU-WEST-1",
+                    "name": "SES-EU-WEST-1",
+                    "type": "string"
+                },
+                {
+                    "id": "Sparkpost",
+                    "name": "Sparkpost",
+                    "type": "string"
+                },
+                {
+                    "id": "Yahoo",
+                    "name": "Yahoo",
+                    "type": "string"
+                },
+                {
+                    "id": "Yandex",
+                    "name": "Yandex",
+                    "type": "string"
+                },
+                {
+                    "id": "Zoho",
+                    "name": "Zoho",
+                    "type": "string"
+                },
+                {
+                    "id": "qiye.aliyun",
+                    "name": "qiye.aliyun",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "apiKey",
+            "viewName": "API Key",
+            "type": "vault"
+        },
+        {
+            "name": "USERNAME",
+            "viewName": "Username",
+            "type": "string"
+        },
+        {
+            "name": "PASSWORD",
+            "viewName": "Password",
+            "type": "vault"
+        }
+    ],
     "methods": [{
         "name": "sendMailByService",
         "viewName": "Send mail by service",
@@ -223,6 +453,11 @@
                 ]
             },
             {
+                "name": "apiKey",
+                "viewName": "API Key",
+                "type": "vault"
+            },
+            {
                 "name": "USERNAME",
                 "viewName": "Username",
                 "type": "string"
@@ -230,7 +465,7 @@
             {
                 "name": "PASSWORD",
                 "viewName": "Password",
-                "type": "string"
+                "type": "vault"
             },
             {
                 "name": "FROM",
@@ -265,6 +500,11 @@
             {
                 "name": "HTML",
                 "viewName": "Html message",
+                "type": "string"
+            },
+            {
+                "name": "attachmentPath",
+                "viewName": "Attachment Path",
                 "type": "string"
             }
         ]},

@@ -1,5 +1,6 @@
 const nodemailer = require('nodemailer');
-
+const nodemailerSendgrid = require('nodemailer-sendgrid');
+const path = require('path');
 
 function _send(transporter, action){
     return new Promise((resolve,reject) => {      
@@ -12,6 +13,15 @@ function _send(transporter, action){
             text: action.params.TEXT, 
             html: action.params.HTML 
         };
+
+        if(action.params.attachmentPath){
+            mailOptions.attachments = [
+                {
+                    filename: path.parse(action.params.attachmentPath).base,
+                    path: action.params.attachmentPath
+                }
+            ]
+        }
     
         transporter.sendMail(mailOptions, (error, info) => {
             if (error) {
@@ -22,19 +32,41 @@ function _send(transporter, action){
     })
 }
 
-function sendMailByService(action){
-        let transporter = nodemailer.createTransport({
-            service:action.params.SERVICE,
-            auth: {
-                user: action.params.USERNAME, 
-                pass: action.params.PASSWORD 
+function sendMailByService(action, settings){
+        const service = action.params.SERVICE || settings.SERVICE;
+        const apiKey = action.params.apiKey || settings.apiKey;
+        const user = action.params.USERNAME || settings.USERNAME;
+        const pass = action.params.PASSWORD || settings.PASSWORD;
+
+        let transporter;
+        if(service == 'SendGrid'){
+            transporter = nodemailer.createTransport(
+                nodemailerSendgrid({
+                    apiKey: apiKey
+                })
+            )
+        } else {
+            let transporterOptions = {
+                service: service
+            };
+            if (apiKey){
+                transporterOptions.auth = {
+                    api_key : apiKey
+                }
+            } else {
+                transporterOptions.auth = {
+                    user: user, 
+                    pass: pass
+                }
             }
-        });
+            transporter = nodemailer.createTransport(transporterOptions);
+
+        }
     
     return _send(transporter, action);    
     
 }
-function sendMailBySMTP(action){
+function sendMailBySMTP(action, settings){
         let transporter = nodemailer.createTransport({
             host:action.params.HOST,
             port:action.params.PORT,
