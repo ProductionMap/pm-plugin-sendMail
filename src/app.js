@@ -71,11 +71,13 @@ function sendMailBySMTP(action, settings){
             host:action.params.HOST,
             port:action.params.PORT,
             secure: (action.params.PORT == 465) ? true:false,
-            auth: {
+        });
+        if (action.params.USERNAME && action.params.PASSWORD) {
+            transporter.auth = {
                 user: action.params.USERNAME, 
                 pass: action.params.PASSWORD 
-            }
-        });
+            };
+        }
 
         return _send(transporter, action);
 }
