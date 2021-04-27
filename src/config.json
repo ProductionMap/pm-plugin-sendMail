@@ -3,7 +3,7 @@
     "type": "executer",
     "execProgram": "node",
     "main": "app.js",
-    "version": "1.2.1",
+    "version": "1.2.2",
     "imgUrl": "envelope.png",
     "settings" : [
         {
@@ -14,208 +14,167 @@
             [
                 {
                     "id": "126",
-                    "name": "126",
-                    "type": "string"
+                    "name": "126"
                 },
                 {
                     "id": "163",
-                    "name": "163",
-                    "type": "string"
+                    "name": "163"                
                 },
                 {
                     "id": "1und1",
-                    "name": "1und1",
-                    "type": "string"
+                    "name": "1und1"
                 },
                 {
                     "id": "AOL",
-                    "name": "AOL",
-                    "type": "string"
+                    "name": "AOL"                
                 },
                 {
                     "id": "DebugMail",
-                    "name": "DebugMail",
-                    "type": "string"
+                    "name": "DebugMail"
                 },
                 {
                     "id": "DynectEmail",
-                    "name": "DynectEmail",
-                    "type": "string"
+                    "name": "DynectEmail"
                 },
                 {
                     "id": "FastMail",
-                    "name": "FastMail",
-                    "type": "string"
+                    "name": "FastMail"
                 },
                 {
                     "id": "GandiMail",
-                    "name": "GandiMail",
-                    "type": "string"
+                    "name": "GandiMail"
                 },
                 {
                     "id": "Gmail",
-                    "name": "Gmail",
-                    "type": "string"
+                    "name": "Gmail"
                 },
                 {
                     "id": "Godaddy",
-                    "name": "Godaddy",
-                    "type": "string"
+                    "name": "Godaddy"
                 },
                 {
                     "id": "GodaddyAsia",
-                    "name": "GodaddyAsia",
-                    "type": "string"
+                    "name": "GodaddyAsia"
                 },
                 {
                     "id": "GodaddyEurope",
-                    "name": "GodaddyEurope",
-                    "type": "string"
+                    "name": "GodaddyEurope"
                 },
                 {
                     "id": "hot.ee",
-                    "name": "hot.ee",
-                    "type": "string"
+                    "name": "hot.ee"
                 },
                 {
                     "id": "Hotmail",
-                    "name": "Hotmail",
-                    "type": "string"
+                    "name": "Hotmail"
                 },
                 {
                     "id": "iCloud",
-                    "name": "iCloud",
-                    "type": "string"
+                    "name": "iCloud"
                 },
                 {
                     "id": "mail.ee",
-                    "name": "mail.ee",
-                    "type": "string"
+                    "name": "mail.ee"
                 },
                 {
                     "id": "Mail.ru",
-                    "name": "Mail.ru",
-                    "type": "string"
+                    "name": "Mail.ru"
                 },
                 {
                     "id": "Maildev",
-                    "name": "Maildev",
-                    "type": "string"
+                    "name": "Maildev"
                 },
                 {
                     "id": "Mailgun",
-                    "name": "Mailgun",
-                    "type": "string"
+                    "name": "Mailgun"
                 },
                 {
                     "id": "Mailjet",
-                    "name": "Mailjet",
-                    "type": "string"
+                    "name": "Mailjet"
                 },
                 {
                     "id": "Mailosaur",
-                    "name": "Mailosaur",
-                    "type": "string"
+                    "name": "Mailosaur"
                 },
                 {
                     "id": "Mandrill",
-                    "name": "Mandrill",
-                    "type": "string"
+                    "name": "Mandrill"
                 },
                 {
                     "id": "Naver",
-                    "name": "Naver",
-                    "type": "string"
+                    "name": "Naver"
                 },
                 {
                     "id": "OpenMailBox",
-                    "name": "OpenMailBox",
-                    "type": "string"
+                    "name": "OpenMailBox"
                 },
                 {
                     "id": "Outlook365",
-                    "name": "Outlook365",
-                    "type": "string"
+                    "name": "Outlook365"
                 },
                 {
                     "id": "Postmark",
-                    "name": "Postmark",
-                    "type": "string"
+                    "name": "Postmark"
                 },
                 {
                     "id": "QQ",
-                    "name": "QQ",
-                    "type": "string"
+                    "name": "QQ"
                 },
                 {
                     "id": "QQex",
-                    "name": "QQex",
-                    "type": "string"
+                    "name": "QQex"
                 },
                 {
                     "id": "SendCloud",
-                    "name": "SendCloud",
-                    "type": "string"
+                    "name": "SendCloud"
                 },
                 {
                     "id": "SendGrid",
-                    "name": "SendGrid",
-                    "type": "string"
+                    "name": "SendGrid"
                 },
                 {
                     "id": "SendinBlue",
-                    "name": "SendinBlue",
-                    "type": "string"
+                    "name": "SendinBlue"
                 },
                 {
                     "id": "SendPulse",
-                    "name": "SendPulse",
-                    "type": "string"
+                    "name": "SendPulse"
                 },
                 {
                     "id": "SES",
-                    "name": "SES",
-                    "type": "string"
+                    "name": "SES"
                 },
                 {
                     "id": "SES-US-EAST-1",
-                    "name": "SES-US-EAST-1",
-                    "type": "string"
+                    "name": "SES-US-EAST-1"
                 },
                 {
                     "id": "SES-US-WEST-2",
-                    "name": "SES-US-WEST-2",
-                    "type": "string"
+                    "name": "SES-US-WEST-2"
                 },
                 {
                     "id": "SES-EU-WEST-1",
-                    "name": "SES-EU-WEST-1",
-                    "type": "string"
+                    "name": "SES-EU-WEST-1"
                 },
                 {
                     "id": "Sparkpost",
-                    "name": "Sparkpost",
-                    "type": "string"
+                    "name": "Sparkpost"
                 },
                 {
                     "id": "Yahoo",
-                    "name": "Yahoo",
-                    "type": "string"
+                    "name": "Yahoo"
                 },
                 {
                     "id": "Yandex",
-                    "name": "Yandex",
-                    "type": "string"
+                    "name": "Yandex"
                 },
                 {
                     "id": "Zoho",
-                    "name": "Zoho",
-                    "type": "string"
+                    "name": "Zoho"
                 },
                 {
                     "id": "qiye.aliyun",
-                    "name": "qiye.aliyun",
-                    "type": "string"
+                    "name": "qiye.aliyun"
                 }
             ]
         },
@@ -247,208 +206,167 @@
                 [
                     {
                         "id": "126",
-                        "name": "126",
-                        "type": "string"
+                        "name": "126"
                     },
                     {
                         "id": "163",
-                        "name": "163",
-                        "type": "string"
+                        "name": "163"
                     },
                     {
                         "id": "1und1",
-                        "name": "1und1",
-                        "type": "string"
+                        "name": "1und1"
                     },
                     {
                         "id": "AOL",
-                        "name": "AOL",
-                        "type": "string"
+                        "name": "AOL"
                     },
                     {
                         "id": "DebugMail",
-                        "name": "DebugMail",
-                        "type": "string"
+                        "name": "DebugMail"
                     },
                     {
                         "id": "DynectEmail",
-                        "name": "DynectEmail",
-                        "type": "string"
+                        "name": "DynectEmail"
                     },
                     {
                         "id": "FastMail",
-                        "name": "FastMail",
-                        "type": "string"
+                        "name": "FastMail"
                     },
                     {
                         "id": "GandiMail",
-                        "name": "GandiMail",
-                        "type": "string"
+                        "name": "GandiMail"
                     },
                     {
                         "id": "Gmail",
-                        "name": "Gmail",
-                        "type": "string"
+                        "name": "Gmail"
                     },
                     {
                         "id": "Godaddy",
-                        "name": "Godaddy",
-                        "type": "string"
+                        "name": "Godaddy"
                     },
                     {
                         "id": "GodaddyAsia",
-                        "name": "GodaddyAsia",
-                        "type": "string"
+                        "name": "GodaddyAsia"
                     },
                     {
                         "id": "GodaddyEurope",
-                        "name": "GodaddyEurope",
-                        "type": "string"
+                        "name": "GodaddyEurope"
                     },
                     {
                         "id": "hot.ee",
-                        "name": "hot.ee",
-                        "type": "string"
+                        "name": "hot.ee"
                     },
                     {
                         "id": "Hotmail",
-                        "name": "Hotmail",
-                        "type": "string"
+                        "name": "Hotmail"
                     },
                     {
                         "id": "iCloud",
-                        "name": "iCloud",
-                        "type": "string"
+                        "name": "iCloud"
                     },
                     {
                         "id": "mail.ee",
-                        "name": "mail.ee",
-                        "type": "string"
+                        "name": "mail.ee"
                     },
                     {
                         "id": "Mail.ru",
-                        "name": "Mail.ru",
-                        "type": "string"
+                        "name": "Mail.ru"
                     },
                     {
                         "id": "Maildev",
-                        "name": "Maildev",
-                        "type": "string"
+                        "name": "Maildev"
                     },
                     {
                         "id": "Mailgun",
-                        "name": "Mailgun",
-                        "type": "string"
+                        "name": "Mailgun"
                     },
                     {
                         "id": "Mailjet",
-                        "name": "Mailjet",
-                        "type": "string"
+                        "name": "Mailjet"
                     },
                     {
                         "id": "Mailosaur",
-                        "name": "Mailosaur",
-                        "type": "string"
+                        "name": "Mailosaur"
                     },
                     {
                         "id": "Mandrill",
-                        "name": "Mandrill",
-                        "type": "string"
+                        "name": "Mandrill"
                     },
                     {
                         "id": "Naver",
-                        "name": "Naver",
-                        "type": "string"
+                        "name": "Naver"
                     },
                     {
                         "id": "OpenMailBox",
-                        "name": "OpenMailBox",
-                        "type": "string"
+                        "name": "OpenMailBox"
                     },
                     {
                         "id": "Outlook365",
-                        "name": "Outlook365",
-                        "type": "string"
+                        "name": "Outlook365"
                     },
                     {
                         "id": "Postmark",
-                        "name": "Postmark",
-                        "type": "string"
+                        "name": "Postmark"
                     },
                     {
                         "id": "QQ",
-                        "name": "QQ",
-                        "type": "string"
+                        "name": "QQ"
                     },
                     {
                         "id": "QQex",
-                        "name": "QQex",
-                        "type": "string"
+                        "name": "QQex"
                     },
                     {
                         "id": "SendCloud",
-                        "name": "SendCloud",
-                        "type": "string"
+                        "name": "SendCloud"
                     },
                     {
                         "id": "SendGrid",
-                        "name": "SendGrid",
-                        "type": "string"
+                        "name": "SendGrid"
                     },
                     {
                         "id": "SendinBlue",
-                        "name": "SendinBlue",
-                        "type": "string"
+                        "name": "SendinBlue"
                     },
                     {
                         "id": "SendPulse",
-                        "name": "SendPulse",
-                        "type": "string"
+                        "name": "SendPulse"
                     },
                     {
                         "id": "SES",
-                        "name": "SES",
-                        "type": "string"
+                        "name": "SES"
                     },
                     {
                         "id": "SES-US-EAST-1",
-                        "name": "SES-US-EAST-1",
-                        "type": "string"
+                        "name": "SES-US-EAST-1"
                     },
                     {
                         "id": "SES-US-WEST-2",
-                        "name": "SES-US-WEST-2",
-                        "type": "string"
+                        "name": "SES-US-WEST-2"
                     },
                     {
                         "id": "SES-EU-WEST-1",
-                        "name": "SES-EU-WEST-1",
-                        "type": "string"
+                        "name": "SES-EU-WEST-1"
                     },
                     {
                         "id": "Sparkpost",
-                        "name": "Sparkpost",
-                        "type": "string"
+                        "name": "Sparkpost"
                     },
                     {
                         "id": "Yahoo",
-                        "name": "Yahoo",
-                        "type": "string"
+                        "name": "Yahoo"
                     },
                     {
                         "id": "Yandex",
-                        "name": "Yandex",
-                        "type": "string"
+                        "name": "Yandex"
                     },
                     {
                         "id": "Zoho",
-                        "name": "Zoho",
-                        "type": "string"
+                        "name": "Zoho"
                     },
                     {
                         "id": "qiye.aliyun",
-                        "name": "qiye.aliyun",
-                        "type": "string"
+                        "name": "qiye.aliyun"
                     }
                 ]
             },
